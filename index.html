@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Economia Circular</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8f5;
+      margin: 0;
+      padding: 20px;
+      transition: background-color 0.5s ease;
+    }
+
+    header {
+      background-color: #2e8b57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    section {
+      margin: 20px 0;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: slideUp 1s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+    }
+
+    a {
+      color: #2e8b57;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #1c5c3f;
+    }
+
+    button {
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1c5c3f;
+    }
+
+    .galeria, .empresa-lista {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .empresa {
+      background-color: #ffffff;
+      border: 1px solid #d0e0d0;
+      border-radius: 10px;
+      padding: 15px;
+      width: 300px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .empresa:hover {
+      transform: scale(1.02);
+    }
+
+    .empresa h3 {
+      color: #2e8b57;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #555;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌿 Economia Circular</h1>
+    <p>Reduzir, Reutilizar, Reciclar — e Regenerar</p>
+  </header>
+
+  <section>
+    <h2>O que é?</h2>
+    <p>A economia circular é um modelo que busca eliminar o desperdício e manter os recursos em uso pelo maior tempo possível. Ao contrário da economia linear (extrair, produzir, descartar), ela propõe um ciclo contínuo de reaproveitamento.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Circular_economy_diagram.svg/1200px-Circular_economy_diagram.svg.png" alt="Diagrama da Economia Circular">
+  </section>
+
+  <section>
+    <h2>Por que é importante?</h2>
+    <ul>
+      <li>🌱 Reduz o impacto ambiental</li>
+      <li>🔄 Evita o desperdício de materiais</li>
+      <li>💡 Estimula a inovação e o design sustentável</li>
+      <li>👥 Promove empregos verdes e inclusão social</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Exemplos práticos</h2>
+    <p>Empresas que reaproveitam embalagens, roupas feitas com tecidos reciclados, e até móveis criados com madeira reaproveitada são exemplos de economia circular em ação.</p>
+  </section>
+
+  <section>
+    <h2>📸 Exemplos Reais no Brasil</h2>
+    <div class="galeria">
+      <div class="empresa">
+        <h3>Boomera</h3>
+        <img src="https://news.sap.com/brazil/files/2020/09/Boomera-SAP.jpg" alt="Boomera - Economia Circular" />
+        <p>Transforma resíduos em novos produtos e conecta cooperativas de reciclagem com grandes empresas.</p>
+        <a href="https://news.sap.com/brazil/2020/09/sap-brasil-e-boomera-criam-plataforma-para-acelerar-economia-circular/" target="_blank">Saiba mais</a>
+      </div>
+
+      <div class="empresa">
+        <h3>Suzano</h3>
+        <img src="https://newspulpaper.com/wp-content/uploads/2023/03/suzano-veracel-economia-circular.jpg" alt="Suzano - Economia Circular" />
+        <p>Usa resíduos da produção de papel para gerar energia e fertilizantes, promovendo reaproveitamento total.</p>
+        <a href="https://newspulpaper.com/suzano-veracel-economia-circular-na-industria/" target="_blank">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🏭 Empresas Brasileiras que Fazem a Diferença</h2>
+    <p>Essas empresas estão repensando o jeito de produzir, consumir e reciclar. Elas mostram que é possível crescer sem destruir o planeta:</p>
+
+    <div class="empresa-lista">
+      <div class="empresa">
+        <h3>Natura</h3>
+        <p>Usa refis, embalagens recicladas e ingredientes naturais. Reduz o lixo e valoriza comunidades locais.</p>
+        <a href="https://investsustain.com.br/economia-circular-na-pratica-casos-de-sucesso-de-empresas-brasileiras-que-estao-repensando-o-lixo/" target="_blank">Veja como a Natura aplica a economia circular</a>
+      </div>
+
+      <div class="empresa">
+        <h3>Ambev</h3>
+        <p>Utiliza garrafas retornáveis e logística reversa para reduzir o desperdício e reaproveitar materiais.</p>
+        <a href="https://investsustain.com.br/economia-circular-na-pratica-casos-de-sucesso-de-empresas-brasileiras-que-estao-repensando-o-lixo/" target="_blank">Conheça o ciclo da Ambev</a>
+      </div>
+
+      <div class="empresa">
+        <h3>Braskem</h3>
+        <p>Inova com plásticos recicláveis e biodegradáveis, fechando o ciclo do plástico com tecnologia.</p>
+        <a href="https://investsustain.com.br/economia-circular-na-pratica-casos-de-sucesso-de-empresas-brasileiras-que-estao-repensando-o-lixo/" target="_blank">Descubra os projetos da Braskem</a>
+      </div>
+
+      <div class="empresa">
+        <h3>SOLOS</h3>
+        <p>Startup que coleta e recicla resíduos, gerando renda para cooperativas e promovendo inclusão social.</p>
+        <a href="https://revistacapitaleconomico.com.br/economia-circular-sustentabilidade/" target="_blank">Veja como a SOLOS atua</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🌟 Explore Mais</h2>
+    <button onclick="alert('Em breve: Quiz sobre Economia Circular!')">Clique para interagir</button>
+  </section>
+
+  <section>
+    <h2>Quer saber mais?</h2>
+    <ul>
+      <li><a href="https://www.ecycle.com.br/economia-circular/" target="_blank">O que é Economia Circular – eCycle</a></li>
+      <li><a href="https://pt.wikipedia.org/wiki/Economia_circular" target="_blank">Economia Circular – Wikipédia</
