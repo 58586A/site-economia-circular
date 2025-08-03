@@ -1,63 +1,120 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f8f5;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  background-color: #f0f8f5;
+  color: #333;
 }
 
 header {
-  background-color: #2e8b57;
+  background-color: #2e7d32;
   color: white;
   padding: 20px;
   text-align: center;
 }
 
 section {
-  margin: 20px 0;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
-button {
-  background-color: #2e8b57;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 1em;
-  border-radius: 8px;
-  cursor: pointer;
+img {
+  max-width: 100%;
+  height: auto;
   margin-top: 10px;
 }
 
-button:hover {
-  background-color: #1c5c3f;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.hidden {
-  display: none;
+ul li::before {
+  content: "✅ ";
 }
 
-#quizBox {
+#fashion-game {
+  background-color: #e8f5e9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.game-area {
+  display: flex;
+  justify-content: space-between;
   margin-top: 20px;
-  background-color: #ffffff;
-  border: 1px solid #d0e0d0;
-  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.items {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bins {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bin {
+  background-color: #c8e6c9;
+  border: 2px dashed #388e3c;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.draggable {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: grab;
+}
+
+#score {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#progress-container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#progress-bar {
+  height: 20px;
+  width: 0%;
+  background-color: #4caf50;
   border-radius: 10px;
 }
 
-.quiz-option {
-  display: block;
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #e0f5e9;
-  border: 1px solid #2e8b57;
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #388e3c;
+  color: white;
+  border: none;
   border-radius: 6px;
   cursor: pointer;
 }
 
-.quiz-option:hover {
-  background-color: #c8ecd6;
+button:hover {
+  background-color: #2e7d32;
 }
 
-#feedback {
-  margin-top: 15px;
-  font-weight: bold;
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #c8e6c9;
+  margin-top: 40px;
 }
